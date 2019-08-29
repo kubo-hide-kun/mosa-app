@@ -2,9 +2,9 @@
 <div class=bg>
 <!--<img :src="imageSrc">-->
 
-<img src="../assets/head2.png" class="cart">
-<img src="../assets/body1.png" class="cart">
-<img src="../assets/leg1.png" class="cart">
+<img :src="img1[index1]" class="cart">
+<img :src="img2[index2]"  class="cart">
+<img :src="img3[index3]"  class="cart">
 <center>
 <div class="select">
 
@@ -12,20 +12,20 @@
     <label for="menu_bar01"><img src="../assets/head-logo-1.png" class="select1"></label>
     <input type="checkbox" id="menu_bar01" class="accordion" />
     <ul id="links01">
-        <li><a href=""><img src="../assets/head-logo-1.png" class="select1"></a></li>
-        <li><a href=""><img src="../assets/head-logo-2.png" class="select1"></a></li>
+        <li><img src="../assets/head-logo-1.png" class="select1" @click="head21"></li>
+        <li><img src="../assets/head-logo-2.png" class="select1" @click="head20"></li>
     </ul>
     <label for="menu_bar02"><img src="../assets/body-logo-1.png" class="select1">2</label>
     <input type="checkbox" id="menu_bar02" class="accordion" />
     <ul id="links02">
-        <li><a href=""><img src="../assets/body-logo-1.png" class="select1"></a></li>
-        <li><a href=""><img src="../assets/body-logo-2.png" class="select1"></a></li>
+        <li><img src="../assets/body-logo-1.png" class="select1" @click="body21"></li>
+        <li><img src="../assets/body-logo-2.png" class="select1" @click="body20"></li>
     </ul>
     <label for="menu_bar03"><img src="../assets/leg-logo-1.png" class="select1"></label>
     <input type="checkbox" id="menu_bar03" class="accordion" />
     <ul id="links03">
-        <li><a href=""><img src="../assets/leg-logo-1.png" class="select1"></a></li>
-        <li><a href=""><img src="../assets/leg-logo-2.png" class="select1"></a></li>
+        <li><img src="../assets/leg-logo-1.png" class="select1" @click="leg21"></li>
+        <li><img src="../assets/leg-logo-2.png" class="select1" @click="leg20"></li>
     </ul>
 
 </div>
@@ -49,6 +49,37 @@
 <script>
 export default {
     name: "Form",
+    data: function(){
+        return {
+            index1: 0,
+            index2: 0,
+            index3: 0,
+            img1: [require("../assets/head1.png"), require("../assets/head2.png")],
+            img2: [require("../assets/body1.png"), require("../assets/body2.png")],
+            img3: [require("../assets/leg1.png"), require("../assets/leg2.png")],
+        };
+    },
+    methods: {
+        head20(){
+            this.index1 = 0;
+        },
+        head21(){
+            this.index1 = 1;
+        },
+        body20(){
+            this.index2 = 1;
+        },
+        body21(){
+            this.index2 = 0;
+        },
+        leg20(){
+            this.index3 = 0;
+        },
+        leg21(){
+            this.index3 = 1;
+        },
+    }
+
 }
 </script>
 
