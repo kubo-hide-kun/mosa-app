@@ -1,9 +1,10 @@
 <template>
     <div id="app">
-
-
+        <div class="bg">
+            <img src="./assets/ULOCO.png" width="100%" height="100%">
+        </div>
         <div id="nav" class="nav-bg">
-            <router-link to="/home">
+            <router-link to="/peper">
             <img src="./assets/paper.png" class="cart">
             </router-link>
             <img src="./assets/logo.png" class="logo">
@@ -21,6 +22,19 @@
 </template>
 
 <style>
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.bg{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        overflow: hidden;
+        z-index: 1;
+}
     .logo{
         height: 15%;
         width: 15%;
@@ -41,16 +55,14 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
-        background: url('./assets/ULOCO.png');
-        height:100%;
-        width: 100%;
+   
     }
 
     #nav {
         padding:10px;
         background-color:white;
         position:fixed;
+        z-index: 50;
     }
     #nav a.router-link-exact-active {
         color: #42b983;

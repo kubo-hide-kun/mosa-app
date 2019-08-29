@@ -22,7 +22,7 @@
             </div>
             <button class="purchase">Purchase</button>
 
-        </div>                                    
+        </div>                                       
     </div>
 </template>
 
@@ -47,15 +47,6 @@
 </script>
 
 <style scoped>
-* {
-    margin: 0px;
-    padding: 0px;
-}
-.form{
-    z-index: 40;
-    position: absolute;
-    transform: translateX(5.5%);
-}
     .border{
    border-top: 1px solid #555555;    /* 上側の1本線 */
    border-bottom: 1px solid #555555; /* 下側の1本線 */

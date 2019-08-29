@@ -8,9 +8,9 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/home',
-      name: 'home',
-      component: () => import('./views/home.vue')
+      path: '/peper',
+      name: 'peper',
+      component: () => import('./views/peper.vue')
     },
     {
       path: '/form',
