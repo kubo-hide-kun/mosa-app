@@ -31,8 +31,18 @@
 </div>
 
 </div>
-</center>
 
+</center>
+ <p class="yame">八女提灯</p>
+ <p class="yame-sp">Yame&thinsp;Lantern</p>
+ <p class="yame-JPY">50,000&thinsp;JPY</p>
+
+            <router-link to="/form">
+          
+            <img src="../assets/sakura.png" class="sakura">
+           <p class="decision">Decision</p>
+  
+            </router-link>
 </div>
 </template>
 
@@ -40,13 +50,62 @@
 export default {
     name: "Form",
 }
-
 </script>
 
 <style scoped>
 * {
     margin: 0px;
     padding: 0px;
+}
+
+.decision{
+    bottom:1%;
+    text-align:right; 
+    right: 20px;
+    color:#AAAAAA;
+    font-size: 20px;
+    z-index: 90;
+    position: absolute;
+    font-weight: 600; 
+}
+.sakura{
+    right:10px;
+    padding-right: 0px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 90;
+    bottom:4%;
+}
+.yame{
+    bottom:10%;
+    text-align:left; 
+    padding-left: 20px;
+    color:#000000;
+    font-size: 30px;
+    z-index: 90;
+    position: absolute;
+    font-weight: 600; 
+}
+.yame-sp{
+    bottom:8%;
+    text-align:left; 
+    padding-left: 20px;
+    color:#808080;
+    font-size: 20px;
+    z-index: 90;
+    position: absolute;
+    font-weight: 600; 
+}
+.yame-JPY{
+    bottom:3%;
+    text-align:left; 
+    padding-left: 20px;
+    color:#AAAAAA;
+    font-size: 20px;
+    z-index: 90;
+    position: absolute;
+    font-weight: 600; 
 }
 .head{
 margin-top: 50px;
